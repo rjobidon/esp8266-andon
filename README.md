@@ -24,7 +24,7 @@ We use digital outputs D5, D6, D7 and D8 to drive the 4 LEDs. Each output produc
 
 ⚠ **Warning! I do not recommend to connecting your computer through USB at same time as any 5V power source, to prevent potential damage on your computer's USB port.**
 
-⚠ **Warning! Never user ESP-8266 as a safety devices. Our example is a simple signal light.**
+⚠ **Warning! Never use the ESP-8266 as a safety devices. Our example is a simple signal light.**
 
 ```
 /*
