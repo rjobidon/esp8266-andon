@@ -24,6 +24,10 @@ LED blinking is done using a timer callback. Function os_timer_setfn() is called
 
 ![Phone](Phone.png)
 
+This circuit diagram shows the connection between the ESP-8266, quadruple half-H driver and LED tower:
+
+![Circuit](Circuit.png)
+
 ⚠ **Warning! I do not recommend to connecting your computer through USB at same time as any 5V power source, to prevent potential damage on your computer's USB port.**
 
 ⚠ **Warning! Never use the ESP-8266 for machine safety or safeguarding. Our example is a simple signal light.**
