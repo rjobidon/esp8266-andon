@@ -18,6 +18,8 @@ Sample JSON from server:
 }
 ```
 
+![AWS](AWS.png)
+
 We use digital outputs D5, D6, D7 and D8 to drive the 4 LEDs. Each output produces 3,3 volts and drives one of the four half-H drivers (LD293D). These drivers are able to switch higher power: from 4,5 V to 36 V and up to 600 mA. Our application also includes a power supply (24 VDC and 5 VDC) as well as a 24 V LED tower. A small voltage regulator (LD1117AV) provides a stable 3,3 V to the ESP-8266 from the 5 V of the power supply.
 
 LED blinking is done using a timer callback. Function os_timer_setfn() is called to init the timer and set our callback function. Then function os_timer_arm() is called to define the time interval in milliseconds and if the timer repeats. The timer callback is very useful in our application because we can continue blinking the LED in background while we call the server in foreground. The callback function must remain short without using the serial monitor.
