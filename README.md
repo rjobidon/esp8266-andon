@@ -2,7 +2,7 @@
 
 # ESP-8266 Simple Andon Signal Using AWS API Gateway Over Secure HTTPS
 
-Andon is a lean manufacturing term referring to a visual signal to notify support teams of a quality or process problem. In this example, we use the ESP-8266 microcontroller to manage a 4-color LED tower. The device connects to your Wi-Fi network and contacts your rest API server over a secure HTTPS connection to retrieve a JSON object, which we decode to find out the active color. The web page required authenticate users and raise alarms is not covered by this tutorial. 
+Andon is a lean manufacturing term referring to a visual signal to notify support teams of a quality or process problem. In this example, we use the ESP-8266 microcontroller to manage a 4-color LED tower. The device connects to your Wi-Fi network and contacts your rest API server over a secure HTTPS connection to retrieve a JSON object, which we decode to find out the active color. The web page required to authenticate users and raise alarms is not covered by this tutorial. 
 
 Sample JSON from server:
 
@@ -18,13 +18,13 @@ Sample JSON from server:
 }
 ```
 
-We use digital outputs D5, D6, D7 and D8 to drive the 4 LEDs. Each output produces 3,3 volts and drives one of the four half-H drivers (LD293D). These drivers are able to switch higher power: from 4,5 V to 36 V and up to 600 mA. Our application also includes a power supply (24 VDC and 5 VDC) as well as a 24 V LED tower. A small voltge regulator (LD1117AV) provides a stable 3,3 V to the ESP-8266 from the 5 V of the power supply.      
+We use digital outputs D5, D6, D7 and D8 to drive the 4 LEDs. Each output produces 3,3 volts and drives one of the four half-H drivers (LD293D). These drivers are able to switch higher power: from 4,5 V to 36 V and up to 600 mA. Our application also includes a power supply (24 VDC and 5 VDC) as well as a 24 V LED tower. A small volatge regulator (LD1117AV) provides a stable 3,3 V to the ESP-8266 from the 5 V of the power supply.      
 
 ![Phone](Phone.png)
 
 ⚠ **Warning! I do not recommend to connecting your computer through USB at same time as any 5V power source, to prevent potential damage on your computer's USB port.**
 
-⚠ **Warning! Never use the ESP-8266 as a safety devices. Our example is a simple signal light.**
+⚠ **Warning! Never use the ESP-8266 for machine safety or safeguarding. Our example is a simple signal light.**
 
 ```
 /*
