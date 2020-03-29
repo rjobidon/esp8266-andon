@@ -40,7 +40,7 @@ No | Qty | Description | Manufacturer | P/N
 2 | 1 | LED tower 24V | Banner | TL50GYRBQ
 3 | 1 | LED cable 5 pins 5m | Banner | MQDC1-515
 4 | 1 | LED mounting base | Banner | SA-M30TE12 
-5 | 1 | Voltage regulator 3,3V | STMicroelectronics | LD1117AV
+5 | 1 | Voltage regulator 3,3V | STMicroelectronics | LD1117AV33
 6 | 1 | Quad half-H driver | Texas Instruments | LD293D
 7 | 1 | Power supply 5V 24V 30W | CUI | VGD-30-D524
 
